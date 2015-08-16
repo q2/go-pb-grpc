@@ -1,0 +1,15 @@
+syntax = "proto3";
+package message;
+
+service MessageService {
+  rpc SendMessage (stream MessageRequest) returns (stream MessageReply) {}
+  rpc SendMessageSimple (MessageRequest) returns (MessageReply) {}
+}
+
+message MessageRequest {
+  string message = 1;
+}
+
+message MessageReply {
+  string message = 1;
+}
