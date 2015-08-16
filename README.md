@@ -9,6 +9,6 @@ Likewise, to run the client:
 
     $ go run client/main.go
 
-If you wish to alter the .proto file, install (https://github.com/google/protobuf)[proto3] then do:
+If you wish to alter the .proto file, install [proto3](https://github.com/google/protobuf) then do:
 
     $ protoc --go_out=plugins=grpc:message *.proto
